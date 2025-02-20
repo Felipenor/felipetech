@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11485/11485970.png">
+  <title>Felipe Tech</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .ofertas {
+      background: red;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+    }
+
+    .search-box input {
+      padding: 5px;
+    }
+
+    .btn {
+      background: orange;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .banner1 {
+      background: url('https://png.pngtree.com/background/20231101/original/pngtree-3d-rendering-of-smartphone-showcasing-a-mobile-app-template-picture-image_5839174.jpg') no-repeat center/cover;
+      color: white;
+      text-align: left;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .banner1 h2, .banner1 p, .banner1 .btn {
+      text-shadow: 2px 2px 5px black;
+      margin-left: 20px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .produto {
+      background: #f4f4f4;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+    }
+
+    .rodape {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    h1.p1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .banner2 {
+      background: url('https://vejasp.abril.com.br/wp-content/uploads/2023/03/celulares_que_valem_a_pena_comprar.jpg?quality=70&strip=info&w=414&h=280&crop=1') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      margin-top: auto; 
+    }
+
+    .banner2 h2, .banner2 p, .banner2 .btn {
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* Responsividade */
+    @media (max-width: 1024px) {
+      .search-box {
+        margin-left: 20px;
+      }
+
+      .banner1, .banner2 {
+        padding: 60px 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .search-box {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .produtos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .banner1 h2, .banner2 h2 {
+        font-size: 24px;
+      }
+
+      .banner1 p, .banner2 p {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner1 h2, .banner2 h2 {
+        font-size: 20px;
+      }
+
+      .banner1 p, .banner2 p {
+        font-size: 14px;
+      }
+
+      .search-box input {
+        width: 100%;
+      }
+
+      .produto {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ofertas">
+    <p>Confira as ofertas RELÂMPAGO</p>
+  </div>
+
+  <header>
+    <nav>
+      <h1>Felipe Tech</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Suporte</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar">
+        <button class="btn">Buscar</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner1">
+    <h2>Os Melhores Smartphones para Você!</h2>
+    <p>Confira nossa seleção especial de celulares de última geração.</p>
+    <button class="btn">Ver Mais</button>
+  </div>
+
+  <h1 class="p1">Confira nossos melhores produtos</h1>
+  
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/61zUVaOpvhL._AC_SX569_.jpg" alt="Celular Redmi Note 13">
+      <h3>Redmi Note 13</h3>
+      <p>Poderoso e eficiente para todas as suas necessidades.</p>
+      <button class="btn"><a href="https://amzn.to/4hGBaRl" target="_blank">Compra</a></button>
+    </div>
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/61zsgtjCMML._AC_SX425_.jpg" alt="Smartphone Xiaomi POCO X7 Pro">
+      <h3>Smartphone Xiaomi POCO X7 Pro 5G</h3>
+      <p>Design moderno e câmera de alta qualidade.</p>
+      <button class="btn"><a href="https://amzn.to/4hEwwDx" target="_blank">Compra</a></button>
+    </div>
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/71EYdKsNPxL._AC_SX679_.jpg" alt="Samsung Galaxy S24 Ultra">
+      <h3>Samsung Galaxy S24 Ultra</h3>
+      <p>Bateria de longa duração e desempenho incrível.</p>
+      <button class="btn"><a href="https://amzn.to/3CZ1GX9" target="_blank">Compra</a></button>
+    </div>
+  </section>
+
+  <section>
+    <div class="banner2">
+      <h2>Nenhum desses te agradou?</h2>
+      <p>Confira abaixo uma outra seleção especial de celulares.</p>
+      <button class="btn">Ver Mais</button>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Felipe Tech - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
